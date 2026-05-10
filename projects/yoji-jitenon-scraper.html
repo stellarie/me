@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>yoji jitenon scraper — alecs gaspar</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<p class="back"><a href="../index.html">← back</a></p>
+
+<header>
+  <div>
+    <h1>yoji jitenon scraper</h1>
+    <p class="lede">a kotlin pipeline for harvesting four-character idioms.</p>
+  </div>
+</header>
+
+<main class="prose">
+
+  <section>
+    <h2><span class="num">01</span> · meta</h2>
+    <p>2026 · kotlin</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> · what</h2>
+    <p>yojijukugo (四字熟語) are japan's classical four-character idioms — proverbs distilled into kanji. jitenon hosts the most complete free dictionary online. this scraper pulls every entry, with readings, meanings, sources, and usage notes, into a structured local dataset.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> · why</h2>
+    <p>wanted offline access to the full corpus for personal study and for feeding into other projects (anki decks, vocab tools, yomitori). also a small excuse to write disciplined kotlin against real-world html.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> · how</h2>
+    <p>plain kotlin with jsoup for parsing. polite crawl with rate limiting and on-disk caching so re-runs don't hammer the source. output is structured json — easy to consume from anything else downstream.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> · links</h2>
+    <ul>
+      <li><a href="https://github.com/stellarie/yoji-jitenon-scraper">source · github.com/stellarie/yoji-jitenon-scraper</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <strong>alecs gaspar</strong> · 2026 · <a href="mailto:abvgaspar1995@gmail.com">abvgaspar1995@gmail.com</a>
+</footer>
+
+</body>
+</html>

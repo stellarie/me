@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>alecs gaspar — portfolio</title>
+  <meta name="description" content="software engineer. builds with hands and with imouto.">
+  <link rel="stylesheet" href="css/main.css?v=20">
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>alecs gaspar</h1>
+    <p class="lede"><span class="accent">platform engineer</span></p>
+  </div>
+  <div class="header-actions">
+    <a href="#contact" class="ghost">contact</a>
+    <input type="checkbox" id="density">
+    <label for="density" class="toggle">compact</label>
+    <input type="checkbox" id="dark">
+    <label for="dark" class="toggle">dark</label>
+  </div>
+</header>
+
+<div class="tabs">
+  <input type="radio" name="tab" id="t1" checked>
+  <input type="radio" name="tab" id="t2">
+  <input type="radio" name="tab" id="t3">
+  <input type="radio" name="tab" id="t4">
+
+  <nav class="tab-labels">
+    <label for="t1"><span class="num">01</span> highlights</label>
+    <label for="t2"><span class="num">02</span> others</label>
+    <label for="t3"><span class="num">03</span> work</label>
+    <label for="t4"><span class="num">04</span> about</label>
+  </nav>
+
+  <form class="filter">
+    <span class="filter-label">filter</span>
+    <input type="checkbox" id="tag-kotlin"><label for="tag-kotlin">kotlin</label>
+    <input type="checkbox" id="tag-ts"><label for="tag-ts">typescript</label>
+    <input type="checkbox" id="tag-java"><label for="tag-java">java</label>
+    <input type="checkbox" id="tag-react"><label for="tag-react">react</label>
+    <input type="checkbox" id="tag-jp"><label for="tag-jp">japanese</label>
+    <button type="reset" class="filter-clear">clear</button>
+  </form>
+
+  <section id="p1" class="panel">
+    <p class="meta">work i'm proud of. the ones that taught me something.</p>
+    <ul class="grid">
+      <li data-tags="kotlin typescript react japanese">
+        <a href="#proj-yomitori">
+          <h3>yomitori</h3>
+          <p class="desc">personal library for 40k+ ebooks. crawls a folder, extracts metadata + covers, tracks reading. japanese furigana + srs quiz built in.</p>
+          <p class="tags">2026 · typescript · kotlin</p>
+        </a>
+      </li>
+      <li data-tags="java react">
+        <a href="#proj-headless-cms">
+          <h3>headless cms</h3>
+          <p class="desc">prototype headless cms. drag-drop page builder, live preview, extensible via groovy hooks.</p>
+          <p class="tags">2026 · spring boot · react</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="p2" class="panel">
+    <p class="meta">smaller experiments, learning projects, things that didn't ship but taught me anyway.</p>
+    <ul class="grid">
+      <li data-tags="kotlin japanese">
+        <a href="#proj-aozora-viewer">
+          <h3>aozora viewer</h3>
+          <p class="desc">reader for aozora bunko — japan's public-domain literary archive. browser-based, japanese-friendly typography.</p>
+          <p class="tags">2026 · javascript · kotlin</p>
+        </a>
+      </li>
+      <li data-tags="kotlin japanese">
+        <a href="#proj-yoji-jitenon-scraper">
+          <h3>yoji jitenon scraper</h3>
+          <p class="desc">kotlin scraper for jitenon's four-character idiom dictionary. pulls yojijukugo entries with readings and meanings to a csv for anki.</p>
+          <p class="tags">2026 · kotlin</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="p3" class="panel">
+    <p class="meta">5+ years building platform and infrastructure across distributed enterprise systems.</p>
+
+    <form class="work-filter">
+      <input type="checkbox" id="recent-only"><label for="recent-only">recent only</label>
+    </form>
+
+    <div class="timeline">
+
+      <details open data-recent>
+        <summary>
+          <span class="role">senior software engineer</span>
+          <span class="org">myridius · makati</span>
+          <span class="period">aug 2024 — present</span>
+        </summary>
+        <p>built platform observability with grafana, datadog, splunk.</p>
+        <p>own and maintain node security middleware between the public site and its backend.</p>
+        <p>moved six enterprise sites to aem cloud service, zero downtime. </p>
+        <p>wrote a cli util for quickbase ops the team now uses.</p>
+      </details>
+
+      <details data-recent>
+        <summary>
+          <span class="role">application developer</span>
+          <span class="org">oracle · makati</span>
+          <span class="period">aug 2023 — aug 2024</span>
+        </summary>
+        <p>wrote rest microservices in java/jpa for an order management system.</p>
+        <p>shipped features end-to-end — data, api, up to ui.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="role">associate → mid-level software engineer</span>
+          <span class="org">accenture · taguig</span>
+          <span class="period">may 2021 — aug 2023</span>
+        </summary>
+        <p>promoted within a year. embedded with an international telecom and a local insurer, building aem platforms.</p>
+        <p>built a shared react/java component library used across brands. led backend integration for payment gateways.</p>
+      </details>
+
+      <details>
+        <summary>
+          <span class="role">bs applied mathematics</span>
+          <span class="org">university of the philippines</span>
+          <span class="period">education</span>
+        </summary>
+        <p>applied math. still shapes how i think about systems.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <section id="p4" class="panel">
+    <p class="meta">expand any section.</p>
+
+    <details>
+      <summary>background</summary>
+      <p>based in the philippines, remote-first. five-plus years on aem, platform and infrastructure across enterprise systems, cloud migrations, observability, security middleware, internal dev tooling.</p>
+      <p>path: accenture (2021–2023) → oracle (2023–2024) → myridius (2024–now). </p>
+      <p>bs applied math from the university of the philippines (2020).</p>
+    </details>
+
+    <details>
+      <summary>current stack</summary>
+      <p>daily: java + spring and node + typescript for backend, react for ui. docker and kubernetes for shipping. grafana, datadog, splunk for keeping the lights on.</p>
+      <p>personal projects: kotlin and python for cli tools and scrapers, and plain html/css when something just needs to exist.</p>
+    </details>
+
+    <details>
+      <summary>what i'm into</summary>
+      <p>japanese literature and language learning — i built yomitori to feed both my reading and learning addiction. </p>
+      <p>outside code: heavy training, mountains, travel.</p>
+    </details>
+  </section>
+</div>
+
+<aside id="proj-yomitori" class="modal modal-project">
+  <a href="#" class="modal-backdrop" aria-label="close"></a>
+  <article class="modal-card project-card">
+    <a href="#" class="modal-x" aria-label="close">×</a>
+    <header class="project-head">
+      <h2>yomitori</h2>
+      <p class="project-lede">personal library for 40,000+ scattered ebooks.</p>
+      <p class="project-meta">2026 · typescript · kotlin</p>
+    </header>
+    <section>
+      <h3>what</h3>
+      <p>turns a folder of 40k+ ebooks into a searchable, beautiful library. crawls automatically, extracts covers and metadata, tracks reading progress, integrates with an epub reader. japanese tools layered on top — furigana rendering, frequency-based vocab, srs quizzes, anki sync.</p>
+    </section>
+    <section>
+      <h3>why</h3>
+      <p>i had a bunch of ebooks that became too unwieldy to browse. nothing was findable. wanted a real home — search with love, not <code>find . -name</code>.</p>
+    </section>
+    <section>
+      <h3>how</h3>
+      <p>typescript frontend, kotlin backend. docker compose orchestrates services. crawler runs on a schedule, persists to a local store. rest api drives search, pagination, and filtering.</p>
+    </section>
+    <section>
+      <h3>links</h3>
+      <ul class="project-links">
+        <li><a href="https://github.com/chloedayo/yomitori">source · github.com/chloedayo/yomitori</a></li>
+      </ul>
+    </section>
+  </article>
+</aside>
+
+<aside id="proj-headless-cms" class="modal modal-project">
+  <a href="#" class="modal-backdrop" aria-label="close"></a>
+  <article class="modal-card project-card">
+    <a href="#" class="modal-x" aria-label="close">×</a>
+    <header class="project-head">
+      <h2>headless cms</h2>
+      <p class="project-lede">a prototype headless cms — visual editor + headless api.</p>
+      <p class="project-meta">2026 · spring boot · react</p>
+    </header>
+    <section>
+      <h3>what</h3>
+      <p>a drag-and-drop visual editor for composing pages, live preview before publishing, and a headless api to feed any frontend — react, vue, mobile. extensible: drop in your own components with custom groovy hooks.</p>
+    </section>
+    <section>
+      <h3>why</h3>
+      <p>most cmses force a tradeoff. headless ones are flexible but unfriendly to non-developers. visual builders trap you in their hosting. this prototype tries to keep both audiences happy — visual where it helps, api-first where it scales.</p>
+    </section>
+    <section>
+      <h3>how</h3>
+      <p>spring boot backend exposing the headless api and persisting page trees. react frontend for the visual editor with live preview. groovy hook layer lets developers register custom components without rebuilding the editor. ships as a static demo on github pages so the editor experience is browsable end-to-end.</p>
+    </section>
+    <section>
+      <h3>links</h3>
+      <ul class="project-links">
+        <li><a href="https://github.com/stellarie/headless-cms">source · github.com/stellarie/headless-cms</a></li>
+        <li><a href="https://stellarie.github.io/headless-cms/">demo · stellarie.github.io/headless-cms</a></li>
+      </ul>
+    </section>
+  </article>
+</aside>
+
+<aside id="proj-aozora-viewer" class="modal modal-project">
+  <a href="#" class="modal-backdrop" aria-label="close"></a>
+  <article class="modal-card project-card">
+    <a href="#" class="modal-x" aria-label="close">×</a>
+    <header class="project-head">
+      <h2>aozora viewer</h2>
+      <p class="project-lede">a reader for japan's public-domain literary archive.</p>
+      <p class="project-meta">2026 · javascript · kotlin</p>
+    </header>
+    <section>
+      <h3>what</h3>
+      <p>aozora bunko hosts thousands of out-of-copyright japanese literary works in raw xhtml. this project renders them with japanese typography, vertical writing where appropriate, minimal chrome around the text.</p>
+    </section>
+    <section>
+      <h3>why</h3>
+      <p>wanted something more legible for casual reading and study — and an excuse to learn how japanese typography works on the web.</p>
+    </section>
+    <section>
+      <h3>how</h3>
+      <p>kotlin pipeline downloads target xhtml text. javascript frontend renders catalog and reading view from the static output.</p>
+    </section>
+    <section>
+      <h3>links</h3>
+      <ul class="project-links">
+        <li><a href="https://github.com/stellarie/aozora-viewer">source · github.com/stellarie/aozora-viewer</a></li>
+      </ul>
+    </section>
+  </article>
+</aside>
+
+<aside id="proj-yoji-jitenon-scraper" class="modal modal-project">
+  <a href="#" class="modal-backdrop" aria-label="close"></a>
+  <article class="modal-card project-card">
+    <a href="#" class="modal-x" aria-label="close">×</a>
+    <header class="project-head">
+      <h2>yoji jitenon scraper</h2>
+      <p class="project-lede">a kotlin pipeline for harvesting four-character idioms.</p>
+      <p class="project-meta">2026 · kotlin</p>
+    </header>
+    <section>
+      <h3>what</h3>
+      <p>yojijukugo (四字熟語) are japan's classical four-character idioms — proverbs distilled into kanji. jitenon hosts the most complete free dictionary online. this scraper pulls every entry, with readings, meanings, sources, and usage notes, into a structured local dataset.</p>
+    </section>
+    <section>
+      <h3>why</h3>
+      <p>wanted offline access to the full corpus for personal study and for feeding into other projects (anki decks and other vocab tools). also a small excuse to write disciplined kotlin against real-world html.</p>
+    </section>
+    <section>
+      <h3>how</h3>
+      <p>plain kotlin with jsoup for parsing. polite crawl with rate limiting and on-disk caching so re-runs don't hammer the source. output is structured json — easy to consume from anything else downstream.</p>
+    </section>
+    <section>
+      <h3>links</h3>
+      <ul class="project-links">
+        <li><a href="https://github.com/stellarie/yoji-jitenon-scraper">source · github.com/stellarie/yoji-jitenon-scraper</a></li>
+      </ul>
+    </section>
+  </article>
+</aside>
+
+<aside id="contact" class="modal">
+  <a href="#" class="modal-backdrop" aria-label="close"></a>
+  <div class="modal-card">
+    <a href="#" class="modal-x" aria-label="close">×</a>
+    <h3>contact</h3>
+    <p>send a note. no form, no captcha — just mail.</p>
+    <p class="contact-list">
+      <a href="mailto:abvgaspar1995@gmail.com">abvgaspar1995@gmail.com</a><br>
+      <a href="https://github.com/stellarie">github</a><br>
+      <a href="https://linkedin.com/in/abvgaspar">linkedin</a>
+    </p>
+    <a href="#" class="modal-close">close</a>
+  </div>
+</aside>
+
+<footer>
+  <strong>alecs gaspar</strong> · 2026<br>
+  <span>page is runnable with noscript. try it!</span>
+</footer>
+
+</body>
+</html>
